@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Form</title>
+</head>
+<body>
+    <form name="frm" method="get" action="#">
+        <table border="1px">
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text" name="fullName" value="" required/></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" value="" /></td>
+            </tr>
+
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="text" name="mobnum" value="" /></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" value="" /></td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date"  name="dob" value="" /></td>
+            </tr>
+
+            <tr>
+                <td>Age</td>
+                <td><input type="number" name="age" value="" min="14" /></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"/>
+                    Male
+                    <input type="radio" name="gender" value="Female"/>
+                    Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <input type="checkbox" name="skills[]" value="html5"/>
+                    html5
+                    <input type="checkbox" name="skills[]" value="CSS"/>
+                    CSS
+                    <input type="checkbox" name="skills[]" value="React.js"/>
+                    React.js
+                    <input type="checkbox" name="skills[]" value="MongoDB"/>
+                    MongoDB
+                    <input type="checkbox" name="skills[]" value="Express.js"/>
+                    Express.js
+                    <input type="checkbox" name="skills[]" value="Node.js"/>
+                    Node.js
+                </td>
+            </tr>
+
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="Country">
+                        <option value="">Choose Country</option>
+                        <option value="Afganisthan">Afganisthan</option>
+                        <option value="Berlin">Berlin</option>
+                        <option value="China">China</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="France">France</option>
+                        <option value="Greenland">Greenland</option>
+                        <option value="Hongkong">Hongkong</option>
+                        <option value="India">India</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="London">London</option>
+                        <option value="Malaysia">Malaysia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select a file</td>
+                <td>
+                    <input type="file" name="fileupload"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Description</td>
+                <td>
+                    <textarea name="Description"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="submit" value="submit"/>
+                    <input type="reset" name="reset" value="reset"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
