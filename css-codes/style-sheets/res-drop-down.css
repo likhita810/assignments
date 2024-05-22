@@ -1,0 +1,75 @@
+body, ul {
+    margin:0;
+    padding:0;
+}
+
+header {
+    background-color: blueviolet;
+    padding: 20px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px; /*gives space btw li items */
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu li a:hover {
+    background-color: rgb(233, 82, 40); /*gives background color to item selected within menu li items*/
+}
+
+/* drop down styles */
+
+.dropdown-menu { /*creating a menu for drop down items*/
+    display:none; /*wont display items within dropdown*/
+    position: absolute;
+    background-color: rgb(157, 87, 222);
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dropdown:hover .dropdown-menu,.dropdown-menu li {
+    display:block;
+}
+
+.dropdown-menu li a {
+    width: 200px;
+    display: block;
+}
+
+/* responsive media */
+
+@media (max-width: 768px) {
+    .menu {
+        text-align: center;
+    }
+
+    .menu li {
+        display:block;
+        margin-bottom: 10px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display:block;
+        position:relative;
+    }
+}
+
+
+
+

@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(243, 243, 205);
+}
+
+.box {
+    margin: 0 auto;
+    width:100%;
+    padding: 40px;
+    background-color: lightskyblue;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.2);
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.box-item {
+    height: auto;
+    padding: 30px;
+    width: 15%;
+    border-radius: 10px;
+    align-items: center;
+}
+
+
+#image {
+    background-image: url(../images/bg-img.jpeg);
+    background-size: cover;
+}
+
+#img-center {
+    background-image: url(../images/bg-img.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#multi-col {
+    background-color: rgb(218, 206, 122);
+}
+
+#dropdown {
+    background-image: linear-gradient(to bottom,#e78989, #ea80ea);
+}
+
+/*media queries*/
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: rgb(196, 242, 242);
+    }
+    
+    .box {
+        background-color: antiquewhite;
+        display: flex;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .box-item {
+        width: 15%;
+        height:auto;
+        padding: 30px;
+        margin: 10px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(186, 240, 222);
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #f0d2d2;
+        width: 90%;
+        height: 100%;
+        padding: 30px;
+        margin: 0 auto;
+    }
+
+    .box-item {
+        width: 80%;
+        height:150px;
+        padding: 30px;
+        margin: 10px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        background-color: rgb(229, 184, 126);
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 30px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .box-item {
+        width: 80%;
+        height:auto;
+        padding: 30px;
+        margin: 10px;
+        align-items: center;
+    }
+}

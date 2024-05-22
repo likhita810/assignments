@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header, footer {
+    text-align: center;
+    background-color: bisque;
+    color:blue;
+    padding:10px;
+}
+
+.gallery {
+    display:flex;
+    flex-wrap: wrap;
+    padding:10px;
+    gap:10px;
+    max-width:1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item {
+    flex: calc(33.333% - 20px); /*giving each gallery item a width of 33.33% of total width of the gallery*/ 
+    overflow: hidden; /*hides any content over flowing the given dimension*/
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width:100%;
+    display:block;
+}
+
+/* mdeia queries */ /*changing the flex % */
+
+@media (max-width: 1200px) {
+    .gallery-item {
+        flex:calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex:calc(100% - 20px);
+    }
+}

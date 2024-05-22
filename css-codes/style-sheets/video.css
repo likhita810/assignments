@@ -1,0 +1,52 @@
+body {
+    border: 2px solid;
+    background-color: rgb(240, 203, 188);
+}
+
+.making {
+    padding: 10px;
+    width: 90%;
+    font-size: 20px;
+}
+
+#craft img {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#craft {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:rgb(136, 9, 9);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content {
+    width: 80%;
+    color:rgb(155, 12, 12);
+    text-align:center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#embriodary { 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#sheet { 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    display: flex;
+}
+
+
+
