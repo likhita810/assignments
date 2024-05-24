@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle animation</title>
+    <style>
+        body {
+            background-color: rgb(179, 217, 240);
+            margin: 0 auto;
+            align-items: center;
+            padding: 50px;
+        }
+        .circle {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            margin: 0px 550px;
+            background-image: radial-gradient(circle, rgb(241, 170, 40), rgb(248, 248, 9) 90%);
+            border-radius: 50%;
+            box-shadow: 15px 10px 10px white;
+            top: 20%;
+            text-align: center;
+            line-height: 150px;
+            animation: movecircle 3s infinite;
+            transition: transform 3s;
+        }
+        
+        .circle:hover {
+            transform: scale(1.9);
+        }
+
+        @keyframes movecircle {
+            to {
+                transform:rotate(360deg);
+            }
+        }
+
+        /* @keyframes movecircle {
+            0% {
+                left: calc(0%-60px);
+                top:calc(0%-40px);
+            }
+
+            50% {
+                left:calc(50%-60px);
+                top:calc(50%-40px);
+            }
+
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="circle">
+        Sun
+    </div>
+</body>
+</html>
