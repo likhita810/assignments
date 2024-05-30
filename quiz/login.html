@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Details</title>
+    <style>
+        body {
+            width: 1200px;
+            margin: 0 auto;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-image: radial-gradient(circle, rgb(90, 90, 239), rgb(0, 0, 35)60%);
+        }
+
+        .left {
+            float: left;
+            width: 30%;
+            display: block;
+            margin-top: 10%;
+            font-size: 20px;
+            text-align: center;
+            color:aliceblue;
+        }
+
+        .left img {
+            width: 100%;
+            height:350px;
+            margin-bottom: 20px;
+        }
+
+        .right {
+            float: right;
+            width: 60%;
+            margin-top:10%;
+            /* margin-left: 20px; */
+            display: block;
+            text-align: left;
+        }
+
+        .label {
+            font-size: 20px;
+            font-weight: bold;
+            display:block;
+            margin-left: 20px;
+            color:aliceblue;
+        }
+
+        .input {
+            padding: 10px;
+            border:rgb(241, 182, 191);
+            border-radius: 5px;
+            width: 60%;
+            margin: 20px;
+            box-shadow: 6px 6px 9px rgb(236, 132, 148);
+        }
+
+        .checkbox {
+            display: flex;
+            margin-left: 20px;
+            color: aliceblue;
+            padding: 10px;
+        }
+
+        .button {
+            font-size: 18px;
+            width: 27%;
+            padding: 10px;
+            font-weight: bold;
+            background: linear-gradient(to right, blueviolet, rgb(105, 105, 238));
+            border-color: aliceblue;
+            border-radius: 5px;
+            margin: 20px;
+            margin-left: 25px;
+            color:white;
+            box-shadow: 4px 5px 6px white;
+        }
+
+        .left img:hover {
+            transform: scale(1.1);
+        }
+
+        .button:hover {
+            background: linear-gradient(to right, lightpink, rgb(209, 82, 103));
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <section class="left">
+        <img src="images/quiz-1.jpeg" alt="quiz_time" title="quiz_time"/>
+        <div>
+            Test your skills with our free Online Quiz.
+        </div>
+    </section>
+
+    <section class="right">
+        <form>
+            <label class="label" for="">User Name</label>
+            <input class="input" type="text" name=""/>
+
+            <label class="label" for="">Email</label>
+            <input class="input" type="email" name=""/>
+
+            <label class="label" for="">Password</label>
+            <input class="input" type="password" name=""/>
+            <br/>
+
+            <label class="checkbox">
+                <input type="checkbox" name="" value="text">
+                Do you want to receive mails for free online quizes?
+            </label>
+
+        </form>
+
+        <button type="submit" class="button">Register</button>
+        <button type="submit" class="button">Sign In</button>
+    </section>
+</body>
+</html>

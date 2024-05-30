@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <style>
+        body {
+            width:1200px;
+            margin:20px auto;
+            align-items: center;
+            background-image: repeating-radial-gradient(circle, pink, skyblue);
+        }
+
+        .head {
+            display:flex;
+            width: 80%;
+            height:100px;  
+            margin:0 auto;
+            background: white;
+            border-radius: 3px;
+            box-shadow: -5px 10px 15px rgb(49, 49, 247);         
+        }
+
+        .head img {
+            width:10%;
+        }
+
+        .head h3 {
+            font-size: 50px;
+            margin: 40px;
+            margin-left:25%;
+            color:blueviolet;
+        }
+
+        .head p {
+            font-size: 24px;
+            color:blue;
+            margin-left: 20%;
+            margin-top:60px;
+        }
+
+        .score table {
+            padding:20px;
+            margin: 20px auto;
+            box-shadow: -2px 2px 5px rgb(49, 49, 247);
+        }
+
+        .score table {
+            color:blue;
+            width:80%;
+            font-size: 24px;
+            padding:5px;
+        }
+
+        .score table td {
+            text-align: center;
+            padding:10px;
+        }
+
+        .gif {
+            color:blue;
+            width:80%;
+            font-size: 24px;
+            padding:10px;
+            align-items: center;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .gif .video {
+            width:50%;
+            margin:20px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="head">
+        <img src="images/quiz-log.jpg" alt="quiz-logo" title="quiz-logo"/>
+        <h3>Your Report</h3>
+        <p>Hey Guest!!</p>
+    </header>
+
+    <main>
+        <section class="score">
+            <table>
+                <tr>
+                    <th>Total Questions</th>
+                    <th>Questions Attempted</th>
+                    <th>Correct answers</th>
+                    <th>Score</th>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>X</td>
+                    <td>Y</td>
+                    <td>Z</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="gif">
+            <!-- if (score>=80%) { -->
+                <img class="video" src="images/congrats.jpg" alt="result" title="result"></img>
+                <p>Congratulations!! You are Qualified in the Quiz.</p>
+            <!-- } else if  (score>=65%) {
+                <vedio controls src="" alt="result" title="result"/>
+            } else {
+                <vedio controls src="" alt="result" title="result"/>
+            } -->
+            
+        </section>
+    </main>
+</body>
+</html>
