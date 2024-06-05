@@ -424,9 +424,10 @@ console.log(user_age, user_age2);
 
 
 
-// arrow functions --> used for faster executions (executes a num of milli sec faster than functions)
+////// arrow functions --> used for faster executions (executes a num of milli sec faster than functions)
 
 // any function can be converted to variable and vice versa.
+// the kw function is not required here. the arguments of the arrow func can be directly defined as arguments of the variables.
 
 // example-1
 const yrs= user_dob => 2024-user_dob;
@@ -441,3 +442,40 @@ const retireInYears=(birthYear, Name) => {
     return `${Name} will retire in ${retirement} years.`;
 }
 console.log(retireInYears(1968,'Mr.Rao'));
+
+
+////// functions calling other functions - nested functions
+
+function cutFruitSlices(fruit) {
+    return fruit*6;
+}
+
+function fruitProcessor(banana, pineapple) {
+    const bananaSlices = cutFruitSlices(banana);
+    const pineappleSlices = cutFruitSlices(pineapple);
+
+    const juiceMix = `this juice is made from ${bananaSlices} slices of banana and ${pineappleSlices} slices of pineapple.`;
+
+    return juiceMix;
+}
+
+console.log(fruitProcessor(6,2));
+
+////// reviewing functions
+const ageCalc = function(dob) {
+    return 2024-dob;
+}
+
+const yearsUntilRetirement = (dob,firstName) => {
+    const currentAge= ageCalc(dob);
+    const retireIn = 65 - currentAge;
+
+    if (retireIn>0) {
+        return `${firstName} will return in ${retireIn} years.`;
+    } else {
+        return `${firstName} has already retired.`;
+    }
+}
+
+console.log(yearsUntilRetirement(1982,'Mr.Rather'));
+
