@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handlers</title>
+    <style>
+        body {
+            height: 100vh;
+            background: radial-gradient(circle, rgb(253, 253, 68),yellow,orange,red,black);
+            text-align: center;
+            font-size: 25px;
+        }
+
+        button, input {
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            background: lightgreen;
+        }
+
+        .highlight {
+            color: red;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- changing text with an action (click)-->
+    <div>
+        <h1 id="title"> Form Handlers </h1>
+        <p class="description" id="description">this is a paragraph</p>
+        <button id="changeTextBtn">button</button>
+    </div>
+
+    <div>---------------------------------------------------------------</div>
+    <!-- creating and inserting new elements  -->
+    <div>
+        <ul id="itemList">
+            <li>qualification 1</li>
+            <li>qualification 2</li>
+            <li>qualification 3</li>
+        </ul>
+        <button id="addItemBtn">Add Item</button>
+    </div>
+
+    <div>---------------------------------------------------------------</div>
+    <!-- Modify Styles -->
+    <div>
+        <p id="paragraph">toggle shows difference when slected and unselected</p>
+        <button type="button" id="toggleHighlightBtn">Toggle Highlight</button>
+    </div>
+
+    <div>---------------------------------------------------------------</div>
+    <!-- Removing Elements -->
+    <div>
+        <ul id="itemList2">
+            <li>experience 1</li>
+            <li>experience 2</li>
+            <li>experience 3</li>
+        </ul>
+
+        <button id="removeItemBtn">Remove Item</button>
+    </div>
+
+    <div>---------------------------------------------------------------</div>
+    <!-- Traversing the DOM -->
+    <div id="container">
+        <p>para 1-parent node - first element child</p>
+        <p>para 2-sibbling node next to parent node</p>
+        <p>para 3-next sibbling 3rd third ele to second node</p>
+    </div>
+
+    <div>---------------------------------------------------------------</div>
+    <!--Handling Forms with Event Handling Concepts-->
+
+    <!-- Handling `onblur` and `onfocus` events with an input element -->
+    <form action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" onfocus="handleFocus(event)" onblur="handleBlur(event)" />
+    </form>
+
+    <div>---------------------------------------------------------------</div>
+    <!-- `onclick` with radio type input -->
+    <form action="#">
+        <input type="radio" name="gender" value="male" onclick="handleRadioClick(event)" /> male 
+        <input type="radio" name="gender" value="female" onclick="handleRadioClick(event)" /> female 
+    </form>
+
+    <div>---------------------------------------------------------------</div>
+     <!-- `onclick` with Checkboxes -->
+     <form action="#">
+        <input type="checkbox" name="options[]" value="Option 1" onclick="handleCheckboxClick(event)"> Option 1 
+        <input type="checkbox" name="options[]" value="Option 2" onclick="handleCheckboxClick(event)"> Option 2 
+        <input type="checkbox" name="options[]" value="Option 3" onclick="handleCheckboxClick(event)"> Option 3 
+        <input type="checkbox" name="options[]" value="Option 4" onclick="handleCheckboxClick(event)"> Option 4
+        <input type="checkbox" name="options[]" value="Other" onclick="handleCheckboxClick(event)"> Other
+    </form>
+
+    <div>---------------------------------------------------------------</div>
+    <!-- `onchange` event with a select dropdown -->
+    <form action="#">
+        <label for="">choose a color:</label>
+        <select name="colors" id="colors" onchange="handleSelectChange(event)">
+            <option value="choose">select a color</option>
+            <option value="purple">purple</option>
+            <option value="violet">violet</option>
+            <option value="pink">pink</option>
+        </select>
+    </form>
+
+    <div>---------------------------------------------------------------</div>
+    <!-- `onselect` event with a textarea -->
+    <form action="#">
+        <textarea name="" id="" onselect="handleSelect(event)">
+            select some text
+        </textarea>
+    </form>
+
+    <script src="form-handlers.js"></script>
+
+</body>
+</html>
+
+
+
+
+
