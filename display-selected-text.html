@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Selected Text area within the text content</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        padding:20px;
+        height:100vh;
+        background-image: repeating-radial-gradient(circle,rgb(250, 250, 114),rgb(252, 175, 175) 15%);
+    }
+
+    div {
+        margin-top: 10%;
+    }
+
+    textarea {
+        padding:20px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <div>
+        <h1>7. Task: Create a text area. When the user selects text within the text area, display the selected text in an alert box.</h1>
+        <h3>- Requirements: <br/>- Use `onselect` event handler. <br/>- Use `window.getSelection` or `textarea.value.substring(textarea.selectionStart, textarea.selectionEnd)` to get the selected text.</h3>
+    </div>
+
+    <textarea id="myText" >I am getting a bit more clarity about js and its scripting concepts..</textarea>
+
+    <script>
+        // document.getElementById('myText').addEventListener('select', function() {
+        //     var selectedText = window.getSelection().toString();
+        //     alert('Selected Text: ' + selectedText);
+        // });
+
+        document.getElementById("myText").onselect = function() {
+        var textarea = this;
+        var selectedText = textarea.value.substring(textarea.selectionStart, textarea.selectionEnd);
+        alert("Selected text: " + selectedText);
+        };
+    </script>
+</body>
+</html>
