@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display text in the Form</title>
+    <style>
+
+        :root {
+            --blue: hsl(240, 100%, 50%);
+        }
+        body {
+            width: 1200px;
+            height: 100vh;
+            background-image: linear-gradient(to top left, lightblue,lightpink,lightblue,lightpink);
+            margin:0 auto;
+        }
+
+        div,form {
+            text-align: center;
+            padding: 20px;
+            margin:10px;
+        }
+
+        form {
+            width:50%;
+            margin:0 auto;
+        }
+
+        input {
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin: 20px;
+            border-color: blanchedalmond;
+        }
+
+        .username {
+            width:90%;
+        }
+        
+        .submitBtn {
+            background: linear-gradient(to left,blue,blueviolet);
+            color: white;
+            border-color: white;
+            border-radius: 40px;
+            padding: 20px;
+            font-size:20px;
+            font-weight: 400;
+        }
+
+        .myForm input:focus {
+            outline: 0;
+            border-color: var(--blue);
+        }
+
+        #submitBtn:hover {
+            transform: scale(1.1);
+            color:black;
+            border-color: black;
+            background: linear-gradient(to right, lightgreen,rgb(247, 179, 54)) ;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>5. Task: Create a form with a text input and a submit button. When the button is clicked, display an alert with the current text input value.</h1>
+        <h2>Requirements: <br/>- Use `onclick` event handler on the submit button. <br/>- Use `querySelector` to select the text input and button. <br/>- Use `alert` to display the text input value.</h2>
+    </div>
+
+    <div>
+        <h1>6. Task: Create a form with a text input. When the input gains focus, change its border color to blue. When it loses focus, change the border color back to its original state.</h1>
+        <h2>- Requirements:<br/>- Use `onfocus` and `onblur` event handlers.<br/>- Use `style` property to change the border color.</h2>
+    </div>
+
+    <form for="myForm" class="myForm">
+        <input type="text" name="username" class="username" id="username" placeholder="Enter your name" onfocus="handleOnFocus(event)" onblur="handleOnBlur(event)"/>
+        <button type="submit" class="submitBtn" id="submitBtn">Submit</button>
+    </form>
+
+    <script>
+        // when submit button is clicked, the input value given by the user will be assigned to the inputValue variable and alert will display the text.
+        document.querySelector('#submitBtn').onclick = function() {
+        var inputValue = document.querySelector('#username').value;
+        alert("You entered: " + inputValue);
+        };
+
+        // adding event listener onfocus and onblur
+        // var inputBlock = document.getElementById('username');
+
+        function handleOnFocus(inputBlock) {
+            inputBlock.target.style.borderColor = 'blue';
+        }
+
+        function handleOnBlur(inputBlock) {
+            inputBlock.target.style.borderColor = '';
+        }
+
+    </script>
+
+</body>
+</html>
+

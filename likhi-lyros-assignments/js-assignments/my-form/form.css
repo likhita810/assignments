@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+/* :root is a psuedo class element of a tree identical to html selector.  it is used to select highest level parent. we can access element in it by using it as variables. colors in roots are declared as --primary-color eg: --light-grey for 2 words or simply --grey for a single word color*/
+
+:root {
+    --light-gray: #c1c1c1;
+    --white: #fff;
+    --blue: rgb(8, 8, 249);
+    --green: #52BE80;
+    --red: #EC7063;
+    --light-blue: #5DADE2;
+}
+
+body {
+    background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    box-shadow: 15px 20px 10px rgba(239, 239, 239, 0.3);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: var(--blue);
+}
+
+form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: var(--blue);
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.form-control input {
+    border: 2px solid var(--light-blue);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.form-control input:focus {
+    /* :focus is also a pseudo class element that triggers a response when selected */
+    outline: 0;
+    border-color: var(--blue);
+    /* gives a border with dark color when input label is selected */
+}
+
+#form button {
+    cursor: pointer;
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
