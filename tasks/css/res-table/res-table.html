@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        body {
+            margin: 20px auto;
+            width: 1200px;
+            height: 100vh;
+        }
+        table {
+            border:none;
+            width: 900px;
+            margin: 40px auto;
+            font-size: 24px;
+            outline: 5px outset blue;
+        }
+
+        th {
+            padding:10px;
+            font-size: 22px;
+            background-color: rgb(64, 64, 245);
+            color: white;
+        }
+
+        td {
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightblue;
+        }
+    </style>
+    <link rel="stylesheet" href="res-table.css">
+</head>
+<body>
+   
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Position</th>
+                <th>Office Location</th>
+                <th>Age</th>
+                <th>Start Date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td data-label="Employee Name">Likhita</td>
+                <td data-label="Position">Software Engineer</td>
+                <td data-label="Office Location">Hyderabad</td>
+                <td data-label="Age">25</td>
+                <td data-label="Start Date">01 April 2024</td>
+                <td data-label="Salary">10000</td>
+            </tr>
+
+            <tr>
+                <td data-label="Employee Name">Anand</td>
+                <td data-label="Position">Software Engineer</td>
+                <td data-label="Office Location">Bangalore</td>
+                <td data-label="Age">26</td>
+                <td data-label="Start Date">01 April 2024</td>
+                <td data-label="Salary">10000</td>
+            </tr>
+
+            <tr>
+                <td data-label="Employee Name">Prasad</td>
+                <td data-label="Position">Software Engineer</td>
+                <td data-label="Office Location">Hyderabad</td>
+                <td data-label="Age">25</td>
+                <td data-label="Start Date">01 April 2024</td>
+                <td data-label="Salary">10000</td>
+            </tr>
+
+            <tr>
+                <td data-label="Employee Name">Narendra</td>
+                <td data-label="Position">Software Engineer</td>
+                <td data-label="Office Location">Hyderabad</td>
+                <td data-label="Age">24</td>
+                <td data-label="Start Date">01 April 2024</td>
+                <td data-label="Salary">10000</td>
+            </tr>
+
+            <tr>
+                <td data-label="Employee Name">Lokesh</td>
+                <td data-label="Position">Software Engineer</td>
+                <td data-label="Office Location">Bangalore</td>
+                <td data-label="Age">25</td>
+                <td data-label="Start Date">01 April 2024</td>
+                <td data-label="Salary">10000</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
