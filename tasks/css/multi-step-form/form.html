@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+        <form>
+
+            <fieldset class="step1">
+                <legend>Personal Information</legend>
+                    <div class="box"></div>
+                    <br>
+
+                    <div>
+                        <label for="name">Enter your name:</label>
+                        <input type="text" value="" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Enter your mail id:</label>
+                        <input type="email" value="" required>
+                    </div>
+
+                    <div>
+                        <label for="phNum">Enter your contact number:</label>
+                        <input type="tel" value="">
+                    </div>
+                    <div>
+                        <button type="submit">Next</button>
+                    </div>
+            </fieldset>
+            <br>
+            <fieldset class="step2">
+                <legend>Address</legend>
+                <div class="box"></div>
+                <br>
+
+                <div>
+                    <label for="line1">Address Line 1</label>
+                    <input type="text" value="">
+                </div>
+
+                <div>
+                    <label for="line2">Address Line 2</label>
+                    <input type="text" value="">
+                </div>
+
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" value="" required>
+                </div>
+
+                <div>
+                    <label for="state">State</label>
+                    <input type="text" value="">
+                </div>
+
+                <div>
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" value="" required>
+                </div>
+
+                <div>
+                    <button type="submit">Next</button>
+                </div>
+            </fieldset>
+
+            <br>
+            <fieldset class="step3">
+            <legend>Account Information</legend>
+            <div class="box"></div>
+            <br>
+
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" value="">
+                </div>
+
+                <div>
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" value="">
+                </div>
+
+                <div>
+                    <button type="submit">Next</button>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset class="step4">
+                <legend>Confirmation</legend>
+                <br>
+
+                <div>
+                    <img src="succ.jpg" alt="Successful" title="Successful">
+                    <p>Successfully Completed</p>
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="bar">
+            <p>Progress Bar</p>
+            <p id="bar"></p>
+        </div>
+</body>
+</html>

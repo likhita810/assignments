@@ -1,0 +1,9 @@
+/* adding external styles to the html file */
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 18px;
+    border: 6px double blueviolet;
+    padding: 10px;
+}

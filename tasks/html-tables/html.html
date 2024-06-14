@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice</title>
+</head>
+<body>
+    <div>
+        <h2>
+            What is HTML?
+        </h2>
+        <p>
+            HTML - Hyper Text Markup Language, is the standard markup language <sup>used for creating web pages and web applications.</sup> <br/> It is <sub>not a programming lang </sub>but a markup lang that defines the structure of the content.
+
+            <!-- here <sup> and <sub> are the text formatting tags. sub- substring & sup - superstring -->
+
+            HTML allows developeers to create and organize various types of content such as text, images, vedios and links.
+        </p>
+    </div>
+
+    <div>
+        <h2>
+            Basic Structure of HTML document: it has HTML tags
+        </h2>
+        <p>
+            &lt;!DOCTYPE html&gt; -- declaration of document type <br/>
+            &lt;html&gt; -- root element that encloses the entire html document <br/>
+                &lt;head&gt; -- this element contains meta data and any references to extrenal files and title of the document or any other elements that describe the document <br/>
+                    &lt;title&gt;Title is given here&lt;/title&gt; -- title of the document <br/>
+                &lt;/head&gt; -- closing of head <br/>
+
+                &lt;body&gt; -- contains visible contentof the web page <br/>
+                    Content of the web page --content <br/>
+                &lt;/body&gt; --  end of body <br/> 
+            &lt;/html&gt; -- end of html doc <br/>
+
+            <!-- here i wanted the tags to be displayed as text. to i replaces < with &lt; and > with &gt; -->
+            other html tags:
+            tags are enclosed within &lt; and &gt; <br/>
+            h1 - h6 -- for different sizes of headings with h1 as highest level and h6 as lowest <br/>
+            p -- paragraph <br/>
+            a -- to create hyperlinks in html, it navigates between pages and websites <br>
+            eg: &lt;a href="url"&gt;link text &lt;/a&gt; <br>
+            url can be given or a simple # can be given if there is no target page to redirect.
+            it can also have an attribute target="blank" which will redirect to a new page within the browser <br/>
+            img -- to embed images into webpage
+            it has attributes src="url" to specify the location/path of the image source and also attributes of width and height and alt and title to specify the name of the image in times of image breakdown and when cursor points the image respectively.
+            the src can either be absolute path(full length path i.e. from this pc) or a relative path (exact path), among which relative is highly prefered. <br/> &lt;img src="url" alt="description" title="imgTitle"/&gt; <br>
+            div -- used for grouping and structing other HTML elements <br/>
+            br -- to create a new line <br/>
+            !--....-- for comments. eg: &lt;!-- this is a comment--&gt; <br/>
+            span -- an inline container used to markup a part of text. when executed within html there wont be any difference. it will be helpful while applying styles using css or js to that particular tag elements
+        </p>
+    </div>
+
+    <div>
+        <h2>
+            Importance of DOCTYPE declaration:
+        </h2>
+        <p>
+            &lt;!DOCTYPE&gt; is not an HTML tag. It is an information to the browser about the type of document to expect. This ensures that the web page is parsed (resolve into its components parts and describe their syntactic role.) the same way by different web browsers.
+        </p>
+    </div>
+
+    <div>
+        <h2>
+            Text Formatting Tags:
+        </h2>
+
+        <p>
+            b and strong - for bold text <br>
+            i and em - for italian format <br>
+            u - for underline <br>
+            sub - substring - half a character lower then the normal line <br>
+            sup - superstring - half a character above the normal line <br>
+        </p>
+    </div>
+
+    <div>
+        <h2>
+            Lists:
+        </h2>
+
+        <p>
+            lists can be ordered, unordered and definition list of items
+            represented as: <br/>
+                 &lt;ul&gt; &lt;li&gt; -- unordered list with list items <br/>
+                 &lt;ol&gt; &lt;li&gt; -- ordered list with list items <br/>
+                 &lt;dl&gt;-- definitionlist of items <br/> &lt;dt&gt; -- definition terms <br/> &lt;dd&gt; -- definition data
+
+                 <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                 </ul>
+
+                 <ol>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                 </ol>
+
+                 <dl>
+                    <dt>def term 1</dt>
+                    <dd>def data 1</dd>
+
+                    <dt>def term 2</dt>
+                    <dd>def data 2</dd>
+                 </dl>
+
+                 nested list - list inside another list.
+                 <ul>
+                    <li>list item 1</li>
+                    <li>list item 2
+                        <ol>
+                            <li>nested list item 1</li>
+                            <li>nested list item 2</li>
+                        </ol>
+                    </li>
+                    <li>list item 3</li>
+                </ul>
+        </p>
+    </div>
+
+    <div>
+        <h2>
+            Tables:
+        </h2>
+        <p>
+            structure:
+            <br/>
+            &lt;table&gt; &lt;tr&gt; &lt;th&gt; &lt;td&gt;
+            tr -- table row <br> th-- table heading <br> td -- table data
+
+            attibules of table: <br>
+            border --gives border to the table <br>
+            cellpadding -- adds space between the content and the cell (space within the cells)<br>
+            cellspacing -- gives space between the cells
+            rowspan -- determines how many rows a table cells should span. determines the vertical postion
+            colspan -- specifies the num f columns a cell should span, determines horizontal postion
+            caption -- gives the caption for the table
+            <br><br>
+            <caption>Sample table</caption>
+            <table border="1px">
+                <tr>
+                    <td colspan="2"> data </td>
+                </tr>
+                <!-- here the data will take a span of 2 columns -->
+                <tr>
+                    <th>S.No </th>
+                    <th>Name</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">1 </td>
+                    <!-- here the S.no 1 will take a row span of 2 so that 2 rows will be accomodated parallelly within the sno 1-->
+                    <td>Likhi</td>
+                </tr>
+                <tr>
+                    <td>Likhita</td>
+                </tr>
+
+            </table>
+        </p>
+    </div>
+
+    <div>
+        <h2>
+            Forms:
+        </h2>
+
+        <p>
+            Forms have label and input tags inside the form tag. it also has button, textarea and select and option tags for creating a dropdown menu
+            &lt;form&gt; <br>
+            &lt;label&gt; -- to mention the label <br>
+            &lt;input&gt; -- for the input in a form <br>
+            it has a type attribute which include text, password, email, number, reset, radio, checkbox etc.
+            radio and checkbox can be used for selecting among different options mentioned. if the name attribute is different it will take only one value or if u want to consider multiple options us can go with name[] which allows selection of multiple options. <br>
+
+            feildset gives a border covering the contents in it. we can also mention name for that particular feildset using legend tag.
+
+            <fieldset>
+                <legend>Applicant Form</legend>
+                <form>
+                    <label>Enter your name: </label>
+                    <input type="text" name="" value="">
+                    <br>
+                    <label>Enter your email id: </label>
+                    <input type="email" name="" value="">
+                    <br>
+                    <label>Enter your age </label>
+                    <input type="number" name="" value="" min="18">
+                    <!-- min and max can be used to set the range of values  -->
+                    <br>
+                    <label>Enter your contact number: </label>
+                    <input type="text" name="" value="">
+                    <br>
+                    <label>Select your gender</label>
+                    <input type="radio" name="gender" value="male">male
+                    <input type="radio" name="gender" value="female">female
+                    <br>
+                    <label>Select your skills</label>
+                    <input type="checkbox" name="skills[]" value="html">html
+                    <input type="checkbox" name="skills[]" value="css">css
+                    <input type="checkbox" name="skills[]" value="js">js
+                    <input type="checkbox" name="skills[]" value="python">python
+                    <br>
+                    <label>Level of Experience</label>
+                    <select name="experience">
+                        <option value="experience">Choose your Experience</option>
+                        <option value="0">0</option>
+                        <option value="0">1</option>
+                        <option value="0">2</option>
+                        <option value="0">3</option>
+                        <option value="0">4</option>
+                        <option value="0">>=5</option>
+
+                    </select>
+                    <br>
+                    <input type="button" name="submit" value="button">
+
+                    <button type="submit">Submit</button>
+                </form>
+            </fieldset>
+        </p>
+    </div>
+
+    <div>
+        <h2>
+            Semantic Elements:
+        </h2>
+        <p>
+            it clearly describes the meaning to both browser and the developer. <br> Non-semantic elements like &lt;div&gt; &lt;span&gt; dont specify anything about the content in it. <br> but Semantic elements like &lt;form&gt; , &lt;table&gt; , &lt;article&gt; defines the contents inside them.
+            <br>
+            semantic elements include: <br>
+            &lt;header&gt; -- it represents the introductory content <br>
+            &lt;nav&gt; -- it is used to define a section of navigation links <br>
+            &lt;main&gt; -- this is similar to body <br>
+            &lt;section&gt; -- it represents the content section, typically with a heading <br>
+            &lt;article&gt; -- it represents a self contained section, such as a blog post or any news  article etc <br>
+            &lt;footer&gt; -- it represents the closing content of a web page/section    
+        </p>
+    </div>
+
+    <div>
+        <h2>
+            Attributes and meta data:
+        </h2>
+        <p>
+            An attribute is a piece of markup lang used to adjust the behavior or dispaly of an HTML element, simply, to change the functionality of an element. <br> it will be mentioned inside inside a tag with specified value assigned to it. <br>
+            eg: &lt;tagName attributeName="value"&gt;&lt;content&gt; <br>
+            Some attributes are: <br>
+            id --  is used to uniquely identify of each and every element in a HTML files <br>
+            class -- used to apply css styles to multiple elements with same class name <br>
+            style -- used for css styling directly to an element, this includes color, font, size etc.
+
+            <br>
+            meta data -- this tag is placed within head section of an HTML doc. it provides info about the char encoding, description, keywords etc. to help search engines crawl and rank web pages.
+        </p>
+    </div>
+
+    <div>
+        <h2>Media Elements:</h2>
+        <p>
+            can access vedio and audio files using media elements <br>
+            &lt;vedio&gt; -- to access embedded vedios <br>
+            &lt;audio&gt&gt; -- to access embedded audio files <br>
+            &lt;iframe&gt; -- to access embedded files from other resources
+        </p>
+    </div>
+
+    <div>
+        <h2>HTML New Elements:</h2>
+        <p>
+            &lt;fig&gt; -- represents a piece of self contained content, referenced as a single unit from main document <br>
+            &lt;figcaption&gt; --used to set a caption for the figure element in the document <br>
+            &lt;details&gt; -- can be used to define summary or caption which can be clicked to change the state of visibility. <br>
+            &lt;summary&gt; -- sub part of details used to display content when user clickes it until which it would be hidden <br>
+        </p>
+    </div>
+</body>
+</html>

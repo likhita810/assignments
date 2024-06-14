@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+    <style>
+        /* embedded style */
+        .div4 {
+            width: 900px;
+            border: 3px dotted green;
+            padding: 10px;
+            margin: 3em auto;
+            outline: lightgreen 10px groove;
+            outline-offset: 5px;
+            box-shadow: 20px -20px 15px yellowgreen;
+        }
+
+        .div5 {
+            text-decoration: 3px ;
+            word-spacing: 10px;
+            text-align: left;
+        }
+    </style>
+
+    <!-- external style sheet -->
+    <link rel="stylesheet" href="css.css">
+    
+</head>
+<body>
+    <div class="div1">
+        <h2>CSS:</h2>
+        <p>
+            CSS- Cascading Style Sheets.
+            <br>
+            its like an organizer that describes how HTML elements will be displayed. <br> it determines fonts, colors, margins, lines, height, width, backgorund images and many other styling methods.
+        </p>
+    </div>
+
+    <div class="div2">
+        <h3>Syntax:</h3>
+        <p>
+            selector {
+                property1:value1; 
+                property2:value2;
+            }
+            <!-- Property:value given inside {} is called declaration -->
+
+            <h3>Selectors:</h3>
+            <p>tag names, class names (.className) and id (#id) are considered as selectors in css that can be used for selecting a particular section for styling <br>* is considered as universal selector <br> other selectors include psuedo class (based on certain state), psuedo elements  (style a part of an element) and attribute selectors (select elements based on an attribute or attribute value). </p>
+        </p>
+    </div>
+
+    <div class="div3">
+        <!-- inline style is done for this -->
+        <h2 style="color:blue; border:2px solid brown; border-radius: 5px;">Ways of inserting a CSS</h2>
+        <p>
+            <ul style="background-color: bisque;">
+                <li>Inline CSS -- inside a html element</li> 
+                <li>Internal/Embedded CSS -- in the head section of html doc</li> 
+                <li>External CSS -- done in a css file and is linked to the html doc</li>
+            </ul>
+
+            An inline style has the highest priority and will override internal and external style sheets.
+        </p>
+    </div>
+
+    <div class="div4">
+        <h2>BOX Model</h2>
+        <p>It is a box that wraps around every html element. <br> 
+            It consists of: <br>
+            <ul>
+                <li>margin -- area outside the border</li>
+                <li>border -- a border line that goes around the padding and content</li>
+                <li>padding -- area around the content and inside border line</li>
+                <li>content -- content of the box that has text, images or any kind of data</li>
+            </ul>
+
+            outline -- it is drawn outside the border, to make the elements stand out.
+            <br> outline properties include: <br>
+            <ul>
+                <li>outline-style</li>
+                <li>outline-color</li>
+                <li>outline-width</li>
+                <li>outline-offset -- adds space btw outline and border</li>
+                <li>outline</li>
+            </ul>
+
+            the outline and border styles include: dotted(.....), dashed(-----), solid(____), double(double outline), groove(3d grooved outline), ridge(3d ridged), inset(3d), outset(3d), none, hidden.
+            <br><br>
+            border: <br>
+            border-radius: x px -- gives curved edges <br>
+            border-style: dotted/dashed/double/ etc. <br>
+            border-width: thick/medium/x px/top-bottom sides/ x px top, y px right/ z px left etc. <br>
+            border-color: color/#num (hex value - 3/6 digit) rgb(x,y,z)/hsl(x%,y%,z%)/transparent <br>
+            box-shadow: right/left top/bottom blurring color;
+        </p>
+    </div>
+
+    <div class="div5">
+        <h2>Text Styling:</h2>
+        <p>text -- content and font -- text style </p>
+        <h4>Font Proerties:</h4>
+        <p>
+            <ul>
+                <li>font-style -- specifies the font style- italic</li>
+                <li>font-variant -- used to convert the case of the letter, small-caps,uppercase,initial, capitalize</li>
+                <li>font-weight -- sets how thick or thin chars should be</li>
+                <li>font-size/line-height -- size of text</li>
+                <li>font-family -- font for an element</li>
+            </ul>
+        </p>
+        <h4>Text Styles:</h4>
+        <p>it includes the properties of a text content <br>
+            color: "value"; -- specifies the text color <br>
+            background-color:"value"; -- specifies the background color of that text content <br><br>
+            text alignment: <br>
+            text-align: center/left/right -- to align text to center left or right respectively within the box <br>
+            text-align-last: right/center/justufy -- to specify how to align the last line of a text <br>
+            text-direction: -- specifies the text direction
+            text-vertical-align: baseline/text-top/text-bottom/sub/super -- sets the vertical alignment of an element <br> <br>
+            text decoration: <br>
+            text-decoration-line: overline/line-through/underline/overlineunderline -- for text decoration<br>
+            text-decoration-color: color -- sp. color of the text <br>
+            text-decoration-style: solid/double/dotted/dashed/wavy -- style of text decoration<br>
+            text-decoration-thickness: auto/ x px/ x % -- thickness of text decoration<br>
+            text-decoration:none -- to remove underline (as underline is by default for links) <br>
+            <br>
+            text transformation: <br>
+            text-transform: uppercase/lowercase/capitalize <br>
+            <br>
+            text spacing: <br>
+            text-indent: x px -- sp the indentation of first line in a text block<br>
+            letter-spacing: x px -- specifies the space btw the chars in text<br>
+            line-height: x px -- sp. the line ht<br>
+            word-spacing: x px -- sp the space btw the words in a text<br>
+            white-space: nowrap -- sp how to handle white space inside an element <br>
+            <br>
+            text shadow: <br>
+            text-shadow: right/left up/down blurring color;
+        </p>
+    </div>
+
+    <div class="div6">
+        <h2>Color:</h2>
+        <p>
+            color property has diff types of values.
+            <ul>
+                <li>colorName</li>
+                <li>hex: #000 # 000000</li>
+                <li>rgb(x,y,z) -rgb-- red, green, blue</li>
+                <li>rgba(x,y,z,0.0-1.0) -rga -- reb, green, blue, opacity</li>
+                <li>hsl(x%,y%,z%) -- hue (degree of color wheel - 0-360, 0/360: red, 120: green, 240: blue), saturation (% value, shade of gray) and lightness</li>
+            </ul>
+        </p>
+
+        <h2>Background Properties:</h2>
+        <p>
+            <ul>
+                <li>background-color -- color of background</li>
+                <li>background-image:url("path") -- >=1 images to be used</li>
+                <li>background-size:cover(scale the img to be as large as possible)/contain(will take the size of the container) -- size of the bg img</li>
+                <li>background-position:center/right/left -- position of bg imgs</li>
+                <li>background-repeat:repat/no-repeat --  how to repeat the bg imgs</li>
+                <li>background-attachment:fixed(wont scroll with the page)/scroll(will scroll with the page)/local (will scroll with element's contents)/initial(sets to default value)/inherit(from its parent element) -- if imgs are fixed/scrolled with rest of the page</li>
+            </ul>
+
+            background-image: <br>
+            url("path") --img will be displayed as background <br>
+            none -- no bg will be there <br>
+            conic-gradient(color1,color2,...) -- conic gradient bg will be dispalyed with given colors <br>
+            repeating-conic-gradient(color1,color2,...) --  repeating conic gradient bg will be dispalyed with given colors <br>
+            linear-gradient(to roght/left/top/bottom, color1,color2,...) -- linear gradient bg will be displayed <br>
+            repeating-linear-gradient:(same as above) -- a repeating linear gradinet will be dispalyed <br>
+            radial-gradient(circle,color1,colr2,...) -- a circular gradient bg will be displayed <br>
+            repeating-radial-gradient() -- a repeating radial gradient will be displayed
+        </p>
+    </div>
+
+
+    <div class="div7">
+        <h2>Layouts:</h2>
+        <h3>display proerties:</h3>
+        <p>
+            none <br>
+            inline -- displayes element as inline. any ht and width will have no effect <br>
+            block -- starts in a new line and takes up entire width<br>
+            flex -- as block-level flex, 1D layout, sets the flexible length on flexible items by adjusting (increasing/decreasing) its size<br>
+            flex-direction: reverse/row-reverse/coloumn-reverse<br>
+            grid -- block-level grid container,  2D layout<br>
+            inline-block - inline-level block and width and height can be applied<br>
+            inline-flex -- inline-level flex<br>
+            inline-grid -- inline-level-grid<br>
+        </p>
+
+        <h3>positioning:</h3>
+        <p>
+            stactic -- not affected by top/bottom/right/left, it always stays acc to the flow of the page
+            relative -- it will adjust itself away from normal position
+            absolute -- will be positioned relative to the nearest positioned ancestor 
+            fixed -- the position will be fixed even if the page is scrolled
+        </p>
+
+        <h4>Z-index:</h4>
+        <p>it sets the stack order of overlapping elements. if 2 positioned elements overlap without z index the last element will be shown <br>
+        the element with higher z-index will appear in front of an element with lower z index, as it sets the order of an element
+        </p>
+
+        <h4>Float:</h4>
+        <p> right/left/none<br>places an element on the left or right side of the container and allows the content to wrap around it</p>
+
+        <h4>Clear:</h4>
+        <p>none/right/left/both<br>the way element interact with floated elements is controoled by clear property. It shows if an element can be placed next to float elements</p>
+    </div>
+
+    <div class="div7">
+        <h2>Responsive Design:</h2>
+        <p>it resizes, hides, shrinks, enlarges or move the contents to fit all the devices (desktops, tablets, phones) veiwing the web page. it uses only html and css <br>
+        viewport: user's visible area of a web page which is different for each device <br>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
+        name="viewport" -- controls the page's dimensions and scaling <br>
+        width=device-width -- sets the width of the page to the screen width of the device <br>
+        initial-scale=1.0 -- initial zoom level when the page is loaded <br>
+
+        <h3>Media queries:</h3>
+        <p>
+            it should either be written in increasing (min-width: x px) or decreasing order (max-width: x px) and follows by {} with the properties written inside {}
+            <br>
+            the properties that have to be changed with the device width should be mention within media queries
+            <br>
+            eg: @media only screen and (max-width: 1200px) {
+                selector {
+                    property:value;
+                }
+            }
+        </p>
+    </p>
+    </div>
+
+    <div class="div8">
+        <h2>Advanced Selectors:</h2>
+        <h3>Adjacent Sibling selector:</h3>
+        <p>selects all elements that are adjacent siblings of the specified elements. <br>eg: h2+ul selects all ul next to h2</p>
+
+        <h3>Attribute Selectors:</h3>
+        <p>selects a particular type of input. <br> input[type="radio"] {property:value}</p>
+
+        <h3>nth-of-type Selector:</h3>
+        <p>selects an element from its position and types <br> element:nth-of-type(position/type){property:value;}</p>
+
+        <h3>Direct Child Element:</h3>
+        <p>seclect any element matching the second element that is a child of the first element. <br>
+        childElement > parentElement {property:value;}
+        </p>
+
+        <h3>General Sibling Selector:</h3>
+        <p>it selects the child element inside the parent element <br>
+        parentElement ~ childElement</p>
+
+        <h3>Descendant Selector:</h3>
+        <p>It makes changes to the elements inside the other elements only <br>
+        element1 element2 element3 {property:value;} -- it changes the content only in element3</p>
+    </div>
+
+    <div class="div9">
+        <h2>Psuedo Classes:</h2>
+        <p>used to define a special state of an element. <br>
+        when user moves mouse over it <br>
+        when an element gets focus
+        <br>
+
+        selector:link {p:v} -- for unvisited links <br>
+        selector:visited {p:v;} -- for visited links <br>
+        selector:hover {p:v} -- mouse over it <br>
+        selector:active {p:v} -- selected <br>
+        selector:focus{p:v} -- when it gets focus <br>
+        selector:first-child {p:v} - first child pseudo class element <br>
+        selector i:first-child {p:v} -- for each/particular child run as loop <br>
+        selector:first-child i {p:v} -- for all childs
+        selector:lang(language) {p:v} -- select element with lang attribute value staring with language <br>
+        :nth-child(n)
+        :nth-last-child(n)
+        :root -- selects the document root element
+        </p>
+
+        <h2>Pseudo Elements:</h2>
+        <p> it is used to style or insert a specified element
+            ::after -- inserts content after every selector specified <br>
+            ::before -- inserts content before every sp selector <br>
+            ::first-letter -- selects every first letter <br>
+            ::first-line -- selects every first line <br>
+            ::selection -- selects the portion of an element that is selected by user
+        </p>
+    </div>
+
+    <div class="div10">
+        <h2>Flex Box:</h2>
+        <h3>Container properties:</h3>
+        <p>
+            display:flex <br>
+            flex-direction: row/column/row-reverse/column-reverse --specifies the firection of flexible items inside a container<br>
+            flex-wrap: wrap/nowrap/wrap-reverse --to wrap or not to wrap<br>
+            flex-flow:row wrap --shorthand property of flex-direction and flex-wrap <br>
+            justify-content:center/flex-start/flex-end-space-around/space-between -- horizontally aligns the flex items <br>
+            align-items:center/flex-start/flex-end/stretch(fills the container)/base;ine --vertically aligns flex items <br>
+            align-content:space-between/space-around/stretch/center/flex-start/flex-end -- to align flex lines <br>    
+        </p>
+
+        <h3>Item properties:</h3>
+        <p>
+            order: 1/2/3(a num, default-0) -- sets the order of the item <br>
+            flex-grow:num -- ratio of that item to increase in size wrt to other items <br>
+            flex-shrink:num -- ratio of item to shrink wrt other items <br>
+            flex-basis: x px -- sets the initial length of the item <br>
+            flex -- shorhand property of flex-grow,shrink and basis <br>
+            align-self:center/flex-start/flex-end -- sets the alignment for the selected items, it over rides the align-items
+        </p>
+    </div>
+
+    <div class="div11">
+        <h2>Grid Layout:</h2>
+        <h4>Container properties:</h4>
+        <p>grid based layout with rows and columns without using float and positioning. <br>
+        display:grid/inline-grid <br>
+        vertical lines of grid -- grid columns <br>
+        hrizontal lines of grid -- grid rows <br>
+        space btw each row and col -- grid gap (column-gap/row-gap/gap) <br>
+        lines btw cols -- col lines <br>
+        lines btw rows -- row lines <br>
+        for a grid to start at col line 1 upto col line 3 -- it should be written as: <br>
+        selector { grid-column-start:1; grid-column-end:3;} <br>
+        grid-template: -- a shorthand property for grid-template-rows(size of rows),columns(size and . of cols) and grid-areas (to display rows n cols) <br>
+        justify-content:space-evenly/space-around-space-between/center/start/end <br>
+        align-content:space-evenly/space-around-space-between/center/start/end <br>
+        grid-column/row: col-row no / span num (num=no of rows/cols to be spaned) <br>
+        naming grid areas - selector {grid-area: gridName} <br>
+        grid-row/col-start/end - grid-area: row-start / column-start / row-end / column-end <br>
+        grid-area: 1 / 3 / 4 / 5 -- the item will start at 1st row 3rd col and ends on 4th row 5th col
+        </p>
+    </div>
+
+    <div class="div12">
+        <h2>Transitions:</h2>
+        <p> chane in property over a given duration. <br>
+        it includes <br> property to add and duration of effect <br>
+        transition-delay: 2s delay in starting the transition  <br>
+        transition-duration: total duration of the transition <br>
+        transition-property: width/ height/background/any other property<br>
+        transition-timing-function:ease(slow start, then fast, then end slow - default func)/ linear(same speed)/ease-in(slow start)/ease-in-out(slow start n slow end)/cubic-beizer(can define own values of the func) -- specifies the speed curve of the transition effect <br>
+        all together 'transition' can be used as a shorthand property
+        these properties will be executed when hover, active, focus etc are applied. <br>
+        transform:scale(>1.1) -- initial zoom in value will be 1, so any value greater than 1.0 will zoom in the item when selected
+        </p>
+
+        <h2>Animations:</h2>
+        <p>An animation lets an element change from one style to another. <br>
+        to use css animations, keyframes should be specified as it holds the style of the element at specified times. <br>
+        selector { animation: animationName transition} <br>
+        <br>
+        @keyframes animationName {
+            from{p:v}
+            to{p:v}
+        }
+        <br> or <br>
+        @keyframes animationName {
+            0% {p:v} <br>
+            50% {p:v}  ... <br> 
+        }
+
+        <br> animation-iteration-count: num -- no. of times the animation should run, this should be declared within Selector <br>
+        <br>
+        animation-direction: normal (forward)/reverse (backwards)/alternate (first plays forward then backwards) /alternate-reverse (first plays backwards then plays forward) <br>
+        <br>
+        animation-fill-mode:none(animation begins with the default value)/ forwards(element will retain the style values that is set by last keyframes)/ backwards(the animation will be performed by the first keyframes value)/both (extends the properties in both directions)  is used to set the element before keyframes is performed from the previously performed keyframes action 
+        </p>
+    </div>
+
+    <div class="div13">
+        <h2>CSS Variables- custom properties</h2>
+        <p>css variables can have global or local scope <br>
+        :root - global variable that matches the document's root element. <br>
+        before accessing the var() the variable have to be declared with --primary-name <br>
+        :root {--black : #000; --light-gray: #xyz;}
+        <br>
+            selector {color: var(--black);} <br>
+            makes the code easier to read and also easier to change the color values
+        </p>
+    </div>
+
+    <div class="div14">
+        <h2>calc()</h2>
+        <p>used to perform calculation based on css property <br>
+        this func accepts single parameter expression and performs mathematical expressions with operators + - * and / <br>
+        eg: calc(30% - 40px) -- 30% width of parent width(100%) and -40px is the constant value given for providing space/gap from the next item/element/border <br>
+        flex:1 1 calc(x% - y px) -- 1 -- flex grow - how much available space should an element take within a container, 1 -- flex basis - for initial length of the item, these 1 and 1 are default values
+        </p>
+    </div>
+
+    <div class="div15">
+        <h2>Minification:</h2>
+        <p>It reduces the size of the CSS files so that they load faster. <br>
+        it eliminates the unnecessary chars and spaces without impacting how browser interpret it.</p>
+    </div>
+
+    <div class="div16">
+        <h2>Units in CSS:</h2>
+        <p>
+            units - a measure of length- 2 types: absolute and relative <br> <br>
+            absolute lengths: px -- pixel -- 1/96 th of 1 inch = 1/2.54 cm <br> <br>
+            relative lengths: <br>
+            ex - rlt to x-ht of curernt font (rarely used) <br>
+            ch - rlt to width of 0 <br>
+            em - relative to the font-size of the element (2em == 2 times the size of the current font) <br>
+            rem - rlt to font size of root element <br>
+            vm - relative to 1% of width of viewport <br>
+            vh - rlt to 1% of height of veiwport <br>
+            vmin - rlt to 1% of viewport's smaller dimension <br>
+            vmax - rlt to 1% of veiwport's larger dimension <br>
+            % - rlt to parent element
+        </p>
+    </div>
+</body>
+</html> 

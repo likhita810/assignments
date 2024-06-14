@@ -1,0 +1,99 @@
+body {
+    width: 1200px;
+    height:100vh;
+    margin: 20px auto;
+    background-image: url(ofc.avif);
+    background-size: cover;
+    /* background: linear-gradient(to top left, rgb(56, 56, 254),rgb(21, 191, 247)); */
+}
+
+header div{
+    background-color: white;
+    color: blue;
+    font-size: 60px;
+    font-style:italic;
+    text-align: center;
+    padding:20px;
+    font-weight: 600;
+}
+
+header nav {
+    background-color: blue;
+    font-size: 20px;
+    text-align: center;
+    padding:10px;
+}
+
+header nav a {
+    color:white;
+    text-decoration: none;
+    margin: 90px;
+}
+
+main {
+    background: white;
+    width: 50%;
+    height: auto;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 14px darkblue;
+}
+
+section {
+    padding: 10px;
+}
+
+.app {
+    font-size: 30px;
+    color:blue;
+}
+
+.form {
+    width:80%;
+    margin: 10px auto;
+}
+
+.form div {
+    margin: 20px;
+    display:block;
+}
+
+label {
+    display:block;
+    color:blue;
+    font-size: 20px;
+}
+
+input {
+    display:block;
+    border-color: rgb(37, 37, 247);
+    border-radius: 5px;
+    width: 90%;
+    padding: 10px;
+}
+
+/* input:focus {
+    border:none;
+} */
+
+select {
+    border: 2px solid blue;
+    color:blue;
+    width: 93%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: blue ;
+    color:white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    margin-left:70%;
+}
+
+button:hover {
+    transform: scale(1.1);
+}

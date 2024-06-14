@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        body {
+            margin: 20px auto;
+            width: 1200px;
+            height: 100vh;
+        }
+        table {
+            border:none;
+            width: 900px;
+            outline: 5px outset blue;
+        }
+
+        th {
+            padding:10px;
+            font-size: 20px;
+            background-color: rgb(64, 64, 245);
+            color: white;
+        }
+
+        td {
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        ### Question 4: Responsive Table <br>
+        Design a responsive table using HTML5 and CSS that displays a list of employees with their details (Name, Position, Office, Age, Start Date, Salary). <br> The table should be scrollable horizontally on small screens. <br> Include headers and at least 5 rows of data.
+    </div>
+    <br> <br>
+    <table border="1px">
+        <caption>Responsive Table</caption>
+
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office Location</th>
+            <th>Age</th>
+            <th>Start Date</th>
+            <th>Salary</th>
+        </tr>
+
+        <tr>
+            <td>Likhita</td>
+            <td>Software Engineer</td>
+            <td>Hyderabad</td>
+            <td>25</td>
+            <td>01 April 2024</td>
+            <td>10000</td>
+        </tr>
+
+        <tr>
+            <td>Anand</td>
+            <td>Software Engineer</td>
+            <td>Bangalore</td>
+            <td>26</td>
+            <td>01 April 2024</td>
+            <td>10000</td>
+        </tr>
+
+        <tr>
+            <td>Prasad</td>
+            <td>Software Engineer</td>
+            <td>Hyderabad</td>
+            <td>25</td>
+            <td>01 April 2024</td>
+            <td>10000</td>
+        </tr>
+
+        <tr>
+            <td>Narendra</td>
+            <td>Software Engineer</td>
+            <td>Hyderabad</td>
+            <td>24</td>
+            <td>01 April 2024</td>
+            <td>10000</td>
+        </tr>
+
+        <tr>
+            <td>Lokesh</td>
+            <td>Software Engineer</td>
+            <td>Bangalore</td>
+            <td>25</td>
+            <td>01 April 2024</td>
+            <td>10000</td>
+        </tr>
+
+    </table>
+</body>
+</html>

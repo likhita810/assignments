@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with col and row span</title>
+</head>
+<body>
+    <div> ### Question 3: Table with Colspan and Rowspan <br>
+        Create a table that displays sales data for a company. The table should have the following structure: <br>
+        - The first row should have three columns: "Region", "Product", "Sales". <br>
+        - The "Region" column should span two rows. <br>
+        - The "Product" column should span three columns: "Q1", "Q2", "Q3". <br>
+        - The "Sales" column should have normal cells for each product and quarter.</div>
+        <br><br>
+        <table border="1px">
+            <caption>Sales Data of Parle Biscuit Products Pvt. Ltd.</caption>
+            <tr>
+                <th rowspan="2">Region</th>
+                <th colspan="3">Product</th>
+                <th rowspan="2">Sales</th>
+            </tr>
+
+            <tr>
+                <th>Q 1</th>
+                <th>Q 2</th>
+                <th>Q 3</th>
+            </tr>
+
+            <tr>
+                <td>Region 1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>tot 1</td>
+            </tr>
+
+            <tr>
+                <td>Region 2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>tot 2</td>
+            </tr>
+
+            <tr>
+                <td>Region 3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>tot 3</td>
+            </tr>
+
+            <tr>
+                <td>Region 4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>tot 4</td>
+            </tr>
+        </table>
+</body>
+</html>

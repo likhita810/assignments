@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merging Cells</title>
+    <style>
+        table tr th {
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        ### Question 2: Merging Cells <br>
+        Design a table to display a weekly schedule. <br>The table should have columns for each day of the week (Monday to Sunday) and rows for time slots (8 AM to 8 PM). <br>Merge cells to indicate a meeting that spans multiple hours on a specific day. <br>For example, a meeting from 9 AM to 11 AM on Wednesday.
+    </div>
+    <br><br>
+    <table border="1px">
+        <caption>Merging Cells</caption>
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+
+        <tr>
+            <th>8-9 am</th>
+            <td rowspan="3" style="background-color: aquamarine;">merged cells-2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>9-10 am</th>
+            <td></td>
+            <td rowspan="2" style="background-color: aquamarine;">* <br>merged cell-1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>10-11 am</th>
+            <td></td>
+            <td></td>
+            <td rowspan="3" style="background-color: aquamarine;"> merged cells-5</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>11am-12 pm</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>12-1 pm</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>1-2 pm</th>
+            <td></td>
+            <td rowspan="2" style="background-color: aquamarine;">merged cells-3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>2-3 pm</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>3-4 pm</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+           <th>4-5 pm</th>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td rowspan="3" style="background-color: aquamarine;">merged cells-4</td>
+           <td></td>
+           <td></td>
+           <td></td>
+        </tr>
+
+        <tr>
+            <th>5-6 pm</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>6-7 pm</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>7-8 pm</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+
+
+    </table>
+
+</body>
+</html>
