@@ -133,21 +133,54 @@ button:hover {
 }
 
 @media (max-width:900px) {
+    body {
+        width: 900px;
+    }
     form {
         display:grid;
+        width: 80%;
+        margin: 20px auto;
     }
 
     form fieldset {
         grid-template-columns: repeat(auto-fit, minmax(150px,2fr));
+        display:block;
+        height: auto;
+        width: 50%;
+        margin: 20px auto;
+    }
+    label {
+        display: block;
+    }
+    input {
+        display: block;
+        width: 80%;
     }
 }
 
 @media (max-width:576px) {
+    body {
+        width: 576px;
+    }
     form {
         display:block;
+        width: 80%;
+        margin: 20px auto;
     }
 
     form fieldset {
-            margin: 30px;
+            margin: 30px auto;
+            width:50%;
+            margin: 20px auto;
+            display: block;
+            height: auto;
+    }
+
+    label {
+        display: block;
+    }
+    input {
+        display: block;
+        width: 80%;
     }
 }

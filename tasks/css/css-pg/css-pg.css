@@ -66,3 +66,27 @@ textarea {
     /* border: 1px solid brown; */
     border-color: brown;
 }
+
+@media (max-width:576px) {
+    body {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #artSec {
+        display: block;
+    }
+
+    #artSec article {
+        margin: 0 auto;
+        width: 70%;
+    }
+    img {
+        border-radius: 5px;
+    }
+    footer {
+        margin-top: 180%;
+    }
+}

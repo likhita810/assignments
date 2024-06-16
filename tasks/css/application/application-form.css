@@ -1,10 +1,8 @@
 body {
-    width: 1200px;
     height:100vh;
     margin: 20px auto;
-    background-image: url(ofc.avif);
+    background-image:  linear-gradient(to top right, rgba(0,0,255,0.6),rgba(255,255,255,0.6),  rgba(0,0,255,0.6)),url(ofc.avif);
     background-size: cover;
-    /* background: linear-gradient(to top left, rgb(56, 56, 254),rgb(21, 191, 247)); */
 }
 
 header div{
