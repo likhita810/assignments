@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="" class="form">
+        <div class="div">
+            <label for="">Name</label>
+            <input type="text" class="inpt">
+        </div>
+
+        <div class="div">
+            <label for="">Age</label>
+            <input type="number" class="inpt">
+        </div>
+
+        <div class="div">
+            <label for="">Email</label>
+            <input type="email" required class="inpt">
+        </div>
+
+        <div class="div">
+            <label for="car">1. Do you own a car?</label>
+            <input type="radio" name="car" id="yes">Yes
+            <input type="radio" name="car" id="no">No
+        </div>
+
+        <div class="div hidden">
+            <label for="">2. How often do you drive?</label>
+            <select name="">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="rarely">Rarely</option>
+            </select>
+        </div>
+
+        <div class="div hidden">
+            <label for="purpose">3. What is your primary purpose of driving?</label>
+            <input type="checkbox" name="purpose[]">Work
+            <input type="checkbox" name="purpose[]">Leisure
+            <input type="checkbox" name="purpose[]">Other
+        </div>
+
+        <div class="div">
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>

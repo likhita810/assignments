@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="reg-form.css">
+</head>
+<body>
+    <form class="form">
+        <div class="labin">
+            <label for="">First Name</label>
+            <input type="text">
+        </div>
+
+        <div class="labin">
+            <label for="">Last Name</label>
+            <input type="text">
+        </div>
+
+        <div class="labin">
+            <label for="">User Name</label>
+            <input type="text" required>
+        </div>
+
+        <div class="labin">
+            <label for="">Email</label>
+            <input type="email" maxlength="20">
+        </div>
+
+        <div class="labin">
+            <label for="">Password</label>
+            <input type="password" minlength="8">
+        </div>
+
+        <div class="labin">
+            <label for="">Confirm Password</label>
+            <input type="password">
+        </div>
+
+        <div class="labin">
+            <label for="">Date of Birth</label>
+            <input type="date">
+        </div>
+
+        <div class="select">
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+        </div>
+
+        <div class="select">
+            <label for="country">Country</label>
+            <select name="country">
+                <option value="select country">Select your country</option>
+                <option value="Afganistan">Afganistan</option>
+                <option value="Afganistan">Britain</option>
+                <option value="Afganistan">China</option>
+                <option value="Afganistan">Denmark</option>
+                <option value="Afganistan">Egypt</option>
+                <option value="Afganistan">India</option>
+            </select>
+        </div>
+
+        <div class="select">
+            <label for="interests">Interests</label>
+            <input type="checkbox" name="interests[]">Inernet Surfing
+            <input type="checkbox" name="interests[]">Freelancing
+            <input type="checkbox" name="interests[]">Listening Music
+            <input type="checkbox" name="interests[]">Watching Movies
+            <input type="checkbox" name="interests[]">Travelling
+        </div>
+
+        <div class="select">
+            <label for="">Profile Picture</label>
+            <input type="file">
+        </div>
+
+        <div>
+            <textarea name="bio">Short Bio</textarea>
+        </div>
+
+        <div>
+            <input type="checkbox">
+            <label for="">Accepting Terms & Conditions</label>
+        </div>
+
+        <div>
+            <button type="reset" class="reset">Reset</button>
+            <button type="submit" class="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

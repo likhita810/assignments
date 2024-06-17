@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form class="form">
+        <div>
+            <label for="">Name</label>
+            <input type="text" pattern="[A-Za-z]{5}" class="inpt">
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="email" required class="inpt">
+        </div>
+        <div>
+            <label for="">Subject</label>
+            <input type="text" minlength="5" maxlength="15" class="inpt">
+        </div>
+        <div class="textarea">
+            <textarea name="" minlength="50" maxlength="400" class="inpt">Message</textarea>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
